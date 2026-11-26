@@ -55,11 +55,25 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-opentelemetry</artifactId>
         </dependency>
-
-        <!-- Actuator (recommended for observability endpoints) -->
+        <!-- Micrometer Observation -> OpenTelemetry bridge -->
+        <!-- Exclude old opentelemetry-instrumentation-api-incubator (2.9.0-alpha) pulled transitively,
+             which conflicts with opentelemetry-jdbc 2.17.0-alpha when JDBC datasource is configured.
+             See: https://github.com/langfuse/langfuse-examples/pull/XXX -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-tracing-bridge-otel</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.opentelemetry.instrumentation</groupId>
+                    <artifactId>opentelemetry-instrumentation-api-incubator</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- Explicitly declare 2.17.0-alpha to override the excluded old version -->
+        <dependency>
+            <groupId>io.opentelemetry.instrumentation</groupId>
+            <artifactId>opentelemetry-instrumentation-api-incubator</artifactId>
+            <version>2.17.0-alpha</version>
         </dependency>
         <dependency>
             <groupId>io.opentelemetry</groupId>

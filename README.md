@@ -1,3 +1,5 @@
+<img width="2400" height="600" alt="hero-b" src="https://github.com/user-attachments/assets/51896372-42ab-4415-a359-99817f629930" />
+
 # langfuse-examples
 
 Examples on how to deploy and use Langfuse.
@@ -16,6 +18,8 @@ Here, we try to highlight amazing work by our contributors and partners.
 | [RAG Observability and Evals](./applications/rag) | A RAG application that uses Langfuse for tracing and evals. | [@aabedraba](https://github.com/aabedraba) |
 | [User Feedback](./applications/user-feedback) | An example on collecting user feedback using Langfuse Web SDK. | [@aabedraba](https://github.com/aabedraba) |
 | [Custom Annotation UI](./applications/custom-annotation-ui) | An example on building a custom annotation UI using Langfuse APIs. | [@aabedraba](https://github.com/aabedraba) |
+| [Kiro Langfuse Integration](./applications/kiro-langfuse) | Kiro IDE hooks that send AI agent activity traces to Langfuse. | [@nklmish](https://github.com/nklmish) |
+| [Laravel Langfuse Integration](./applications/laravel-langfuse) | Laravel examples demonstrating auto-instrumented Langfuse tracing with Laravel AI, Prism, and Neuron AI. | [@axyr](https://github.com/axyr) |
 
 ## Deployment Examples
 
@@ -41,6 +45,7 @@ Below is a list of SDKs maintained by the community. Please note that for tracin
 | Ruby     | Unofficial Ruby SDK for Langfuse: [simplepractice/langfuse-ruby](https://github.com/simplepractice/langfuse-ruby) | [@NoahFisher](https://github.com/NoahFisher) |
 | Elixir   | Unofficial Elixir SDK for Langfuse: [workera-ai/langfuse_sdk](https://github.com/workera-ai/langfuse_sdk) | [@workera-ai](https://github.com/workera-ai) |
 | PHP      | PHP library for integrating Langfuse: [janzaba/langfuse-php](https://github.com/janzaba/langfuse-php) | [@janzaba](https://github.com/janzaba) |
+| Laravel | Laravel SDK with tracing, prompts, and auto-instrumentation for Prism, Laravel AI, and Neuron AI: [axyr/laravel-langfuse](https://github.com/axyr/laravel-langfuse) | [@axyr](https://github.com/axyr) |
 | .NET     | .NET client library for Langfuse: [lukaszzborek/Langfuse-dotnet](https://github.com/lukaszzborek/Langfuse-dotnet) | [@lukaszzborek](https://github.com/lukaszzborek) |
 | JVM      | Java/JVM SDK for Langfuse: [kpavlov/langfuse-jvm](https://github.com/kpavlov/langfuse-jvm) | [@kpavlov](https://github.com/kpavlov) |
 | Go       | Go SDK for Langfuse: [henomis/langfuse-go](https://github.com/henomis/langfuse-go) | [@henomis](https://github.com/henomis) |
